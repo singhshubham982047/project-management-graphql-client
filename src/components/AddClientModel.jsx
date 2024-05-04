@@ -51,7 +51,7 @@ const AddClientModel = () => {
         aria-labelledby="addClientModelLabel"
         aria-hidden="true">
         <div className="modal-dialog">
-          <div className="modal-content">
+          <div className="modal-content bg-dark text-light">
             <div className="modal-header">
               <h1 className="modal-title fs-5" id="addClientModelLabel">
                 Client Info
@@ -69,7 +69,7 @@ const AddClientModel = () => {
                     Name
                   </label>
                   <input
-                    className="form-control"
+                    className="form-control bg-dark text-light"
                     type="text"
                     name="name"
                     id="name"
@@ -77,11 +77,13 @@ const AddClientModel = () => {
                     onChange={(e) => setName(e.target.value)}
                     required
                   />
+                </div>
+                <div className="mb-3">
                   <label htmlFor="email" className="form-label">
                     Email
                   </label>
                   <input
-                    className="form-control"
+                    className="form-control bg-dark text-light"
                     type="email"
                     name="email"
                     id="email"
@@ -89,11 +91,13 @@ const AddClientModel = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     required
                   />
+                </div>
+                <div className="mb-3">
                   <label htmlFor="phone" className="form-label">
                     Phone
                   </label>
                   <input
-                    className="form-control"
+                    className="form-control bg-dark text-light"
                     type="text"
                     name="phone"
                     id="phone"
